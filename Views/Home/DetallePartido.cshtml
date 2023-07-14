@@ -1,0 +1,28 @@
+<body>
+    <article class="infopartido">
+        <p> Nombre: @ViewBag.datosPartido.Nombre </p>
+        <img src="/imagenes/@ViewBag.datosPartido.Logo">
+        <p> Sitio Web: <a href="@ViewBag.datosPartido.SitioWeb"> @ViewBag.datosPartido.SitioWeb </a> </p>
+        <p> Fecha De Fundacion: @ViewBag.datosPartido.FechaFundacion </p>
+        <p> Cantidad De Diputados: @ViewBag.datosPartido.CantidadDiputados </p>
+        <p> Cantidad De Senadores: @ViewBag.datosPartido.CantidadSenadores </p>
+        <a class="AgregarCand" href='@Url.Action("AgregarCandidato", new {idPart = @ViewBag.datosPartido.Id_Partido})'> Agregar Candidato</a>
+    </article>
+    <section>
+        @foreach (Candidato item in ViewBag.listaCandidatos)
+        {
+            <div class="Candidato">
+                <p> @item.Nombre  @item.Apellido </p>
+                <img src="/imagenes/@item.Foto">
+                <a href='@Url.Action("VerDetalleCandidato", new{idCand = item.Id_Candidato})'>
+                <p> Info </p> </a>
+                    <div class="BotonEliminar">
+                    <a href='@Url.Action("EliminarCandidato", new{idCand = item.Id_Candidato, idPart = item.FK_Partido})'> Eliminar Candidato </a>
+                    </div>
+            </div>
+            
+        }
+    </section>
+        
+   
+</body>

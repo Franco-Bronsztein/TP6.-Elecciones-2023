@@ -1,0 +1,12 @@
+<body>
+    <div class="cardcand">
+        <article class="bodydetallecandidato">
+            <h3> @ViewBag.Candidato.Nombre @ViewBag.Candidato.Apellido</h3>
+            <img src="/imagenes/@ViewBag.Candidato.Foto">
+            <h3> Nacio el @ViewBag.Candidato.FechaNacimiento </h3>
+            <h3> Se Postula Para El Cargo De: @ViewBag.Candidato.Postulacion</h3>
+            <a href='@Url.Action("VerDetallePartido", new{idPart = @ViewBag.Candidato.FK_Partido})'>
+            <p> Partido </p> </a>
+        </article>
+    </div>
+</body>

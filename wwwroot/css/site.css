@@ -1,0 +1,177 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body 
+{
+  background-color: antiquewhite;
+  margin-bottom: 60px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div
+{
+  text-align: center;
+  width: 100%;
+}
+div h1
+{
+  text-align: center;
+}
+
+div img
+{
+  width: 40%;
+  height: auto;
+}
+
+section
+{
+  margin-top:70px;
+  justify-content: space-between;
+}
+
+.Partido
+{
+  width: 30%;
+  height: 220px;
+  float: left;
+  border-radius: 8px; 
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin: 20px;
+  transition: 0.7s;
+  object-fit: cover;
+  background-color: bisque;
+}
+
+.Partido:hover
+{
+  transform: translateY(-17px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.6);
+}
+
+.Partido h2
+{
+  text-decoration: none;
+}
+
+.Partido img
+{
+  width: 70%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.Partido a
+{
+  text-decoration: none;
+}
+
+/* DETALLEPARTIDO */
+
+.Candidato
+{
+  width: 30%;
+  height: 430px;
+  float: left;
+  border-radius: 8px; 
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin: 20px;
+  transition: 0.7s;
+  background-color: bisque;
+}
+.Candidato .BotonEliminar
+{
+  text-decoration: none;
+  padding: 0%;
+  margin: 0%;
+  height: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.Candidato .BotonEliminar a{
+  background-color: beige;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 1px rgba(0,0,0,0.2);
+  text-decoration: none;
+  color: black;
+  
+}
+.Candidato:hover
+{
+  transform: translateY(-17px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.6);
+}
+.AgregarCand
+{
+  text-decoration: none;
+  padding: 0%;
+  margin: 0%;
+  height: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+section div p
+{
+  margin-top: 10px;
+}
+
+/* DETALLE CANDIDATO */
+
+
+.cardcand
+{
+  display: flex;
+  justify-content: center;
+}
+.bodydetallecandidato
+{
+  width: 60%;
+  height: 640px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin: 20px;
+  transition: 0.7s;
+  background-color: bisque;
+}
+.bodydetallecandidato:hover
+{
+  transform: translateY(-17px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.6);
+}
+
+.Creditos-divs
+{
+  float: left;
+}
+
+.Creditos-divs div
+{
+  width: 40%;
+  height: auto;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.3);
+}

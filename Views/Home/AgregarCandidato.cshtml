@@ -1,0 +1,21 @@
+<body>
+    <form action='@Url.Action("GuardarCandidato")' method="post">
+        
+        <input type="hidden" name="FK_Partido" value="@ViewBag.Partido.Id_Partido">
+        <label for="item1">Apellido:</label>
+        <input type="text" id="Apellido" name="Apellido"><br><br>
+
+        <label for="item2">Nombre:</label>
+        <input type="text" id="Nombre" name="Nombre"><br><br>
+
+        <label for="item3">Fechca Nacimiento:</label>
+        <input type="date" id="FechaNacimiento" name="FechaNacimiento"><br><br>
+
+        <label for="item4">Foto:</label>
+        <input type="text" id="Foto" name="Foto"><br><br>
+
+        <label for="item5">Postulacion:</label>
+        <input type="text" id="Postulacion" name="Postulacion"><br><br>
+        <input type="submit">
+    </form>
+</body>

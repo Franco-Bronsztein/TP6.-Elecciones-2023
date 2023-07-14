@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <h1> Bienvenido A Las Elecciones Virtuales </h1>
+    <img src="imagenes/IMGindex.webp">
+</div>
+
+<section class="Cards">
+    @foreach (Partido item in ViewBag.listaPartido)
+    {
+        <div class="Partido">
+        <a href='@Url.Action("VerDetallePartido", new{idPart = item.Id_Partido})'>
+            <h2> @item.Nombre </h2>
+        </a>
+        <img src="/imagenes/@item.Logo">
+        </div> 
+    }
+</section>
